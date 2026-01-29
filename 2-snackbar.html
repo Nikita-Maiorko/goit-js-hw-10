@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <title>Snackbar</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BB5ie5fK.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/helpers-vWVjJyDi.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-DQxAFzxK.css">
+  </head>
+  <body>
+    <a class="back-link" href="./index.html"
+      ><svg class="icon-back" width="16" height="16">
+        <use href="./img/svg/prev.svg#icon-undo2"></use>
+      </svg>
+    </a>
+    <div class="form-container">
+      <form class="form">
+        <div class="form-group">
+          <label class="input-label" for="input">Delay (ms)</label>
+          <input type="number" step="1000" name="delay" id="input" required />
+          <fieldset>
+            <legend>State</legend>
+            <div class="radio-button">
+              <input
+                class="radio-button-input visually-hidden"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                id="radio1"
+                required
+              />
+              <label class="radio-button-label" for="radio1">
+                <span class="radio-button-custom"></span>
+                Fulfilled
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                class="radio-button-input visually-hidden"
+                type="radio"
+                name="state"
+                value="rejected"
+                id="radio2"
+                required
+              />
+              <label class="radio-button-label" for="radio2">
+                <span class="radio-button-custom"></span>
+                Rejected
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <button class="animated-button" type="submit">
+          <span>Create notification</span><span></span>
+        </button>
+      </form>
+    </div>
+
+  </body>
+</html>
